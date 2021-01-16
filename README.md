@@ -24,7 +24,7 @@ Primero en se agregaron la paginas de login y chat dentro del directorio app se 
     La función getUsers pemite obtener todos los usuarios para que podamos resolver los nombres de los usuarios.<br/>
     La funcion getUserForMsg ayuda a encontrar el nombre real (correo electrónico) de un usuario en función de un UID y la matriz de usuarios.<br/>
     La función encryptMsg permite encritar un mensaje con cryptoJS mientras que la función decrypt realiza la función de desencriptar.<br/>
-  <h2>login.module.ts>h2><br/>
+  <h2>login.module.ts<h2><br/>
     Aqui importamos el formsModule de @angular/forms para poder crear el formulario de registro.<br/>
     <h2>login.page.ts</h2><br/>
     <h3>Funciones</h3><br/>
