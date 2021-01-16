@@ -1,0 +1,7 @@
+{
+  "name": "evaluacion",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

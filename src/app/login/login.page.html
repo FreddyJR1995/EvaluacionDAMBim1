@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-title>Poli Chat</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" color="secondary">
+
+  <form [formGroup]="credentialForm">
+
+    <ion-item>
+      <ion-input placeholder="Email"
+      formControlName="email"
+      autofocus="true"
+      clearInput="true"></ion-input>
+    </ion-item>
+    <div *ngIf="(email.dirty || email.touched) && email.errors" class="errors">
+      <span *ngIf="email.errors?.required">Email es requerido</span>
+      <span *ngIf="email.errors?.email">Email es invalido</span>
+    </div>
+
+    <ion-item>
+      <ion-input placeholder="Password"
+      type="password"
+      formControlName="password"
+      clearInput="true"></ion-input>
+    </ion-item>
+    <div *ngIf="(password.dirty || password.touched) && password.errors" class="errors">
+      <span *ngIf="password.errors?.required">Contraseña es requerida</span>
+      <span *ngIf="password.errors?.email">Contraseña es invalida</span>
+    </div>
+
+  </form>
+
+  <ion-button (click)="signUp()" expand="full">
+    <ion-icon name="person-add-sharp" slot="start"></ion-icon>Registrarse
+  </ion-button>
+  <ion-button (click)="signIn()" expand="full" color="primary">
+    <ion-icon name="log-in-sharp" slot="start"></ion-icon>Iniciar Sesión</ion-button>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="dark" class="ion-text-center">
+    <ion-label >Freddy Valverde</ion-label><br/>
+    <ion-label >Aplicaciones móviles</ion-label>
+  </ion-toolbar>
+</ion-footer>

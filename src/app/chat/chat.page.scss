@@ -1,0 +1,32 @@
+.message-input {
+    width: 100%;
+    border: 1px solid var(--ion-color-medium);
+    border-radius: 6px;
+    background: rgb(238, 220, 220);
+    resize: none;
+    margin-top: 0px;
+    --padding-start: 8px;
+}
+ 
+.message {
+    padding: 10px !important;
+    border-radius: 10px !important;
+    margin-bottom: 4px !important;
+    white-space: pre-wrap;
+}
+ 
+.my-message {
+    background: rgb(233, 118, 118);
+    color: rgb(247, 245, 234);
+}
+ 
+.other-message {
+    background: rgb(226, 243, 143);
+    color: rgb(28, 32, 32);
+}
+ 
+.time {
+    color: #1f42b4;
+    float: right;
+    font-size: small;
+}
