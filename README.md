@@ -11,11 +11,11 @@ Cree un proyecto de ionic, con angular, ademas se instalaron los plugins de @ang
 Primero en se agregaron la paginas de login y chat dentro del directorio app se encontraran las carpetas de cada página. Ademas de un servicio que se encuentra en la carpeta services de app la cual nos ayudará a conectarnos con firebase.<br/>
  <h2>environment.ts</h2><br/>
  Aqui nosotros vamos a copiar la variable con las claves de acceso a firebase.<br/>
- <h2>app.module.ts>/h2><br/>
+ <h2>app.module.ts</h2><br/>
   Aqui importe las librerias necesarias para la autenticación, store de firebase, el environment con la clave y el modulo de firebase.<br/>
   <h2>app-routing.module.ts</h2><br/>
   Aqui indico que la pagina inicial es el login siempre y cuando no este registrado o iniciado sesión, en caso contrario lo dirija al chat directamente.<br/>
-  <h2>chat.service.ts>/h2><br/>
+  <h2>chat.service.ts</h2><br/>
     Aqui en primera instancia se declaran dos interfaces la cual una es para los datos del usuario y otra para los datos del mensaje. En el usuario manejamos el uid y el email. En el mensaje manejamos un id, id de quien envio el mensaje, el contenido del mensaje, la fecha de creación del mensaje y un validador para saber si es mi mensaje o no.<br/>
     <h3>Funciones</h3><br/>
     La primera funcion que se encuetra es onAuthStatechanged esta controlara si el usuario a iniciado sesión o no. Para en tal caso enviarlo a la pagina del login o del chat.<br/>
